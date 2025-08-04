@@ -15,14 +15,14 @@
     --popover: 0 0% 100%;
     --popover-foreground: 210 11% 15%;
 
-    /* Cores primárias - Azul corporativo */
-    --primary: 204 100% 23%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 204 100% 40%;
+    /* Cores primárias - Verde lima */
+    --primary: 68 74% 49%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --primary-glow: 68 74% 60%;
 
-    /* Cores secundárias - Verde lima */
-    --secondary: 68 74% 49%;
-    --secondary-foreground: 222.2 84% 4.9%;
+    /* Cores secundárias - Azul corporativo */
+    --secondary: 204 100% 23%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 98%;
     --muted-foreground: 215 16% 47%;
