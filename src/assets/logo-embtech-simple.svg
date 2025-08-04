@@ -1,0 +1,7 @@
+<svg viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- EMB part in blue -->
+  <text x="0" y="28" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#004774">EMB</text>
+  
+  <!-- TECH part in green -->
+  <text x="72" y="28" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#C8D820">TECH</text>
+</svg>

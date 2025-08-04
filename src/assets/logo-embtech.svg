@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- EMB part in blue -->
+  <text x="10" y="50" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#004774">EMB</text>
+  
+  <!-- TECH part in green -->
+  <text x="120" y="50" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#C8D820">TECH</text>
+  
+  <!-- Subtitle -->
+  <text x="10" y="70" font-family="Arial, sans-serif" font-size="12" fill="#004774" letter-spacing="4">tecnologia embarcada</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="5" cy="75" r="3" fill="#C8D820"/>
+  <circle cx="390" cy="75" r="3" fill="#004774"/>
+  <line x1="15" y1="75" x2="380" y2="75" stroke="#004774" stroke-width="1"/>
+</svg>

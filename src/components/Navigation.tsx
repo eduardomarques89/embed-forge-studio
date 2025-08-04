@@ -11,9 +11,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-primary">
-              EmbedForge
-            </div>
+            <img 
+              src="/src/assets/logo-embtech-simple.svg" 
+              alt="EmbTech" 
+              className="h-8 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}

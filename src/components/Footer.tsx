@@ -11,7 +11,7 @@ const Footer = () => {
       "Assistência Técnica", 
       "Fórum",
       "Central de Downloads",
-      "Conta EmbedForge"
+      "Conta EmbTech"
     ],
     "Fale Conosco": [
       "Fale Conosco",
@@ -30,8 +30,8 @@ const Footer = () => {
     "Conheça Também": [
       "Programa de Canais",
       "Investidores", 
-      "Cursos EmbedForge",
-      "Loja EmbedForge",
+      "Cursos EmbTech",
+      "Loja EmbTech",
       "Newsletter"
     ]
   };
@@ -123,9 +123,13 @@ const Footer = () => {
         <div className="py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center space-x-6">
-              <div className="text-2xl font-bold">EmbedForge</div>
+              <img 
+                src="/src/assets/logo-embtech-simple.svg" 
+                alt="EmbTech" 
+                className="h-8 w-auto brightness-0 invert"
+              />
               <span className="text-primary-foreground/60 text-sm">
-                Copyright EmbedForge {currentYear}. Todos os direitos reservados.
+                Copyright EmbTech {currentYear}. Todos os direitos reservados.
               </span>
             </div>
             

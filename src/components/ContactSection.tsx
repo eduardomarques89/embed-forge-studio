@@ -151,8 +151,8 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold mb-2">E-mail</h4>
                     <p className="text-muted-foreground">
-                      contato@embedforge.com<br />
-                      vendas@embedforge.com
+                      contato@embtech.com<br />
+                      vendas@embtech.com
                     </p>
                   </div>
                 </div>
