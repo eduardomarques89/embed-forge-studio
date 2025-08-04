@@ -59,12 +59,13 @@ const ProductsSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Produtos de
-            <span className="text-primary"> Última Geração</span>
+            Soluções Eletrônicas
+            <span className="text-primary"> Embarcadas</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Desenvolvemos hardware embarcado personalizado para transformar suas ideias 
-            em soluções tecnológicas inovadoras e eficientes.
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+            Projeto, desenvolvimento e fabricação de soluções eletrônicas embarcadas, 
+            compostas por hardware (placa eletrônica, displays, sensores, etc), firmware, 
+            software, aplicativos e conectividade para controle e automação de produtos/equipamentos.
           </p>
         </div>
 
