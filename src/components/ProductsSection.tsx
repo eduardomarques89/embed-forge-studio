@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Cpu, Wifi, Shield, Zap } from "lucide-react";
+import { Cpu, Wifi, Shield, Zap, Smartphone, Settings, CircuitBoard } from "lucide-react";
 import iotDevice from "@/assets/iot-device.jpg";
 import smartHome from "@/assets/smart-home.jpg";
 import industrial from "@/assets/industrial.jpg";
@@ -8,25 +8,28 @@ import industrial from "@/assets/industrial.jpg";
 const ProductsSection = () => {
   const products = [
     {
-      title: "Dispositivos IoT",
-      description: "Sistemas embarcados para Internet das Coisas com conectividade avançada e baixo consumo energético.",
+      title: "Hardware Embarcado",
+      description: "Projeto e desenvolvimento de placas eletrônicas, displays, sensores e componentes customizados para sua aplicação específica.",
       image: iotDevice,
-      icon: <Wifi className="w-8 h-8" />,
-      color: "tech-blue"
-    },
-    {
-      title: "Automação Residencial",
-      description: "Soluções inteligentes para residências com controle remoto e integração completa.",
-      image: smartHome,
-      icon: <Shield className="w-8 h-8" />,
-      color: "primary"
-    },
-    {
-      title: "Sistemas Industriais",
-      description: "Hardware robusto para aplicações industriais com alta confiabilidade e performance.",
-      image: industrial,
       icon: <Cpu className="w-8 h-8" />,
-      color: "tech-purple"
+      color: "primary",
+      features: ["Placas Eletrônicas", "Displays Customizados", "Sensores Integrados"]
+    },
+    {
+      title: "Firmware & Software",
+      description: "Desenvolvimento de firmware embarcado, software de controle e aplicativos mobile para gestão completa dos sistemas.",
+      image: smartHome,
+      icon: <Wifi className="w-8 h-8" />,
+      color: "tech-blue",
+      features: ["Firmware Embarcado", "Software Desktop", "Apps Mobile"]
+    },
+    {
+      title: "Conectividade & Automação",
+      description: "Soluções de conectividade IoT e sistemas de automação para controle inteligente de produtos e equipamentos industriais.",
+      image: industrial,
+      icon: <Shield className="w-8 h-8" />,
+      color: "tech-purple",
+      features: ["IoT Connectivity", "Automação Industrial", "Controle Remoto"]
     }
   ];
 
@@ -72,22 +75,40 @@ const ProductsSection = () => {
         {/* Product Cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">
           {products.map((product, index) => (
-            <Card key={index} className="group hover:shadow-elegant transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
-              <div className="relative h-48 overflow-hidden">
+            <Card key={index} className="group hover:shadow-elegant transition-all duration-500 transform hover:-translate-y-2 overflow-hidden border-0 bg-gradient-to-br from-background to-muted/30">
+              <div className="relative h-56 overflow-hidden">
                 <img 
                   src={product.image} 
                   alt={product.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className={`absolute top-4 right-4 p-3 rounded-full bg-${product.color}/10 text-${product.color}`}>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className={`absolute top-4 right-4 p-3 rounded-full bg-white/20 backdrop-blur-sm text-white`}>
                   {product.icon}
                 </div>
               </div>
-              <CardContent className="p-6">
+              <CardContent className="p-6 space-y-4">
                 <h3 className="text-xl font-bold mb-3">{product.title}</h3>
-                <p className="text-muted-foreground mb-4">{product.description}</p>
-                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  Saiba Mais
+                <p className="text-muted-foreground mb-4 leading-relaxed">{product.description}</p>
+                
+                {/* Features tags */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {product.features.map((feature, featureIndex) => (
+                    <span 
+                      key={featureIndex} 
+                      className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium"
+                    >
+                      {feature}
+                    </span>
+                  ))}
+                </div>
+                
+                <Button 
+                  variant="outline" 
+                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all duration-300"
+                >
+                  <Settings className="w-4 h-4 mr-2" />
+                  Consulte Nossa Equipe
                 </Button>
               </CardContent>
             </Card>
