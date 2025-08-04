@@ -1,6 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle } from "lucide-react";
+import circuitBoard from "@/assets/circuit-board.jpg";
+import labWorkspace from "@/assets/lab-workspace.jpg";
 
 const TechnologySection = () => {
   const technologies = [
@@ -84,21 +86,64 @@ const TechnologySection = () => {
           ))}
         </div>
 
-        {/* Stats Section */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {[
-            { number: "500+", label: "Projetos Concluídos" },
-            { number: "98%", label: "Satisfação do Cliente" },
-            { number: "10+", label: "Anos de Experiência" },
-            { number: "24/7", label: "Suporte Técnico" }
-          ].map((stat, index) => (
-            <div key={index} className="group">
-              <div className="text-4xl md:text-5xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform">
-                {stat.number}
+        {/* Visual Section with Images */}
+        <div className="mt-20 grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <img 
+              src={circuitBoard} 
+              alt="Circuito avançado"
+              className="w-full h-80 object-cover rounded-2xl shadow-elegant"
+            />
+          </div>
+          <div>
+            <h3 className="text-3xl font-bold mb-6">
+              Tecnologia de <span className="text-primary">Ponta</span>
+            </h3>
+            <p className="text-lg text-muted-foreground mb-6">
+              Utilizamos os componentes mais avançados do mercado para garantir 
+              máxima performance e confiabilidade em nossos produtos.
+            </p>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="text-center p-4 bg-muted/50 rounded-xl">
+                <div className="text-2xl font-bold text-primary">500+</div>
+                <div className="text-sm text-muted-foreground">Projetos</div>
               </div>
-              <div className="text-muted-foreground">{stat.label}</div>
+              <div className="text-center p-4 bg-muted/50 rounded-xl">
+                <div className="text-2xl font-bold text-primary">98%</div>
+                <div className="text-sm text-muted-foreground">Satisfação</div>
+              </div>
             </div>
-          ))}
+          </div>
+        </div>
+
+        {/* Second Visual Section */}
+        <div className="mt-20 grid lg:grid-cols-2 gap-12 items-center">
+          <div className="order-2 lg:order-1">
+            <h3 className="text-3xl font-bold mb-6">
+              Laboratório <span className="text-primary">Moderno</span>
+            </h3>
+            <p className="text-lg text-muted-foreground mb-6">
+              Nossa infraestrutura de ponta permite desenvolver e testar 
+              soluções com os mais altos padrões de qualidade.
+            </p>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="text-center p-4 bg-muted/50 rounded-xl">
+                <div className="text-2xl font-bold text-primary">10+</div>
+                <div className="text-sm text-muted-foreground">Anos</div>
+              </div>
+              <div className="text-center p-4 bg-muted/50 rounded-xl">
+                <div className="text-2xl font-bold text-primary">24/7</div>
+                <div className="text-sm text-muted-foreground">Suporte</div>
+              </div>
+            </div>
+          </div>
+          <div className="order-1 lg:order-2">
+            <img 
+              src={labWorkspace} 
+              alt="Laboratório moderno"
+              className="w-full h-80 object-cover rounded-2xl shadow-elegant"
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -3,6 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import teamWork from "@/assets/team-work.jpg";
+import officeBuilding from "@/assets/office-building.jpg";
 
 const ContactSection = () => {
   return (
@@ -17,6 +19,27 @@ const ContactSection = () => {
             Nossa equipe especializada está pronta para transformar suas ideias em realidade. 
             Entre em contato e vamos conversar sobre seu próximo projeto.
           </p>
+        </div>
+
+        {/* Team Image Section */}
+        <div className="mb-16">
+          <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-elegant">
+            <img 
+              src={teamWork} 
+              alt="Nossa equipe trabalhando"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent flex items-center">
+              <div className="text-white p-8 max-w-md">
+                <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                  Equipe Especializada
+                </h3>
+                <p className="text-white/90">
+                  Profissionais com mais de 10 anos de experiência em hardware embarcado
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -69,6 +92,22 @@ const ContactSection = () => {
 
           {/* Contact Info */}
           <div className="space-y-8">
+            {/* Office Image */}
+            <Card className="overflow-hidden">
+              <div className="h-48 relative">
+                <img 
+                  src={officeBuilding} 
+                  alt="Nosso escritório"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end">
+                  <div className="text-white p-4">
+                    <h4 className="font-semibold">Nosso Escritório</h4>
+                    <p className="text-white/90 text-sm">Localização privilegiada em São Paulo</p>
+                  </div>
+                </div>
+              </div>
+            </Card>
             <Card className="hover:shadow-elegant transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
