@@ -20,16 +20,16 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#produtos" className="text-foreground hover:text-primary transition-colors">
+            <a href="/produtos" className="text-foreground hover:text-primary transition-colors">
               Produtos
             </a>
-            <a href="#solucoes" className="text-foreground hover:text-primary transition-colors">
+            <a href="/solucoes" className="text-foreground hover:text-primary transition-colors">
               Soluções
             </a>
             <a href="/blog" className="text-foreground hover:text-primary transition-colors">
               Blog
             </a>
-            <a href="#contato" className="text-foreground hover:text-primary transition-colors">
+            <a href="/contato" className="text-foreground hover:text-primary transition-colors">
               Contato
             </a>
           </div>
@@ -57,16 +57,16 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border bg-background">
             <div className="flex flex-col space-y-4">
-              <a href="#produtos" className="text-foreground hover:text-primary transition-colors">
+              <a href="/produtos" className="text-foreground hover:text-primary transition-colors">
                 Produtos
               </a>
-              <a href="#solucoes" className="text-foreground hover:text-primary transition-colors">
+              <a href="/solucoes" className="text-foreground hover:text-primary transition-colors">
                 Soluções
               </a>
               <a href="/blog" className="text-foreground hover:text-primary transition-colors">
                 Blog
               </a>
-              <a href="#contato" className="text-foreground hover:text-primary transition-colors">
+              <a href="/contato" className="text-foreground hover:text-primary transition-colors">
                 Contato
               </a>
               <div className="flex flex-col space-y-2 pt-4">
